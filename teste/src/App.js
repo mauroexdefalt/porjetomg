@@ -1,7 +1,12 @@
 import { TextField, Button } from '@material-ui/core';
+import React , {useState} from 'react'
 
 
 function Teste() {
+
+  const [open , setOpen] = useState(false)
+
+
   return (
     <div >
       <form style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginTop: '5%' }}>
@@ -27,6 +32,16 @@ function Teste() {
           <Button type='submit' color='primary'>Enviar</Button>
     
       </form>
+
+
+      <Button onClick={()=>{setOpen(!open)}} color='primary'>teste</Button>
+
+            
+      {open ? 'GABRIEL'  : 'MAURO'}
+
+
+
+
 
 
     </div>
