@@ -2,7 +2,9 @@
 function Teste() {
   return (
     <div>
-    </div>
+      
+      eae gabriel so de boa ?
+          </div>
 
   )
 }
